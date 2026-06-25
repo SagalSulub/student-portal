@@ -8,6 +8,8 @@ import Footer from "../components/Footer"
 import studentsData from "../data/students"
 
 export default function Home() {
+  // main page (index)
+  // contains form and the list of student
   const [students, setStudents] = useState(studentsData)
 
   const addStudent = (student) => {
