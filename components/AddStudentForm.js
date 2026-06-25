@@ -46,12 +46,27 @@ export default function AddStudentForm({ onAdd }) {
     <form onSubmit={handleSubmit}>
       <h3>Add Student</h3>
 
+    <div>
+      <label>First Name</label>
       <input placeholder="first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+    </div>
+    
+    <div>
+      <label>Last Name</label>
       <input placeholder="last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+    </div>
+    
+    <div>
+      <label>Date of Birth</label>
       <input placeholder="dob" type="date" value={dob} onChange={(e) => setDob(e.target.value)} />
+    </div>
+    
+    <div>
+      <label>Grade</label>
       <input placeholder="grade" type="number" min="9" max="12" value={grade} onChange={(e) => setGrade(e.target.value)} />
-
-      <button type="submit">add student</button>
+    </div>
+    
+    <button type="submit">add student</button>
     </form>
   )
 }
